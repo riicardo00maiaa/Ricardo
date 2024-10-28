@@ -1,0 +1,61 @@
+/* Estilo básico */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #4CAF50, #81C784); /* Gradiente de verde */
+    color: #333;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+img {
+    width: 200px;  /* Aumentar a largura da imagem */
+    height: 200px; /* Definir uma altura igual para manter a forma quadrada */
+    margin-bottom: 20px;
+}
+
+
+/* Flexbox para a seção principal */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 800px;
+    width: 100%;
+}
+
+/* Estilo da lista de hobbies */
+section ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+section ul li {
+    background-color: #e0e0e0;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Media Query para dispositivos móveis */
+@media (max-width: 600px) {
+    .main-content {
+        padding: 10px;
+    }
+    img {
+        width: 100px;
+    }
+}
